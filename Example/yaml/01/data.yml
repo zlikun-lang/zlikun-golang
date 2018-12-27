@@ -1,0 +1,23 @@
+defaults:
+  query-interval: 60s
+  query-timeout: 30s
+  query-value-on-error: -1
+
+# Defined data sources
+data-sources:
+  ibank-order-ds:
+    driver: mysql
+    properties:
+      host: 10.25.233.28
+      port: 33066
+      user: readall
+      password: 123456
+      database: db_user
+  ibank-user-ds:
+    driver: mysql
+    properties:
+      host: 10.25.233.28
+      port: 33066
+      user: readall
+      password: 123456
+      database: db_student
